@@ -2,8 +2,6 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 COPY index.html .
 
-# You could run build tools here (npm build, etc.)
-# For this simple app, we just verify the file exists
 RUN echo "Build stage complete" && ls -la
 
 FROM nginx:alpine
