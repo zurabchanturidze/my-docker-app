@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Docker App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        background: white;
+        border-radius: 20px;
+        padding: 60px;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+      }
+
+      .docker-logo {
+        font-size: 80px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #666;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #667eea;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 50px;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .info-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        border-left: 4px solid #667eea;
+      }
+
+      .info-card h3 {
+        color: #667eea;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+
+      .info-card p {
+        color: #333;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="docker-logo">🐳</div>
+      <h1>Hello, Docker!</h1>
+      <p>This app is running inside a Docker container</p>
+      <p>Built with a multi-stage Dockerfile and served by Nginx</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Base Image</h3>
+          <p>Nginx Alpine</p>
+        </div>
+        <div class="info-card">
+          <h3>Build Type</h3>
+          <p>Multi-Stage</p>
+        </div>
+        <div class="info-card">
+          <h3>Security</h3>
+          <p>Non-Root User</p>
+        </div>
+        <div class="info-card">
+          <h3>Port</h3>
+          <p>8080</p>
+        </div>
+      </div>
+
+      <div class="badge">✅ Production Ready</div>
+    </div>
+  </body>
+</html>
